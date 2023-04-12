@@ -15,7 +15,7 @@ metadata:
 spec:
   chart: https://%{KUBERNETES_API}%/static/charts/traefik-20.3.1+up20.3.0.tgz
   set:
-    global.systemDefaultRegistry: "%{SYSTEM_DEFAULT_REGISTRY_RAW}%"
+    global.systemDefaultRegistry: ""
   valuesContent: |-
     podAnnotations:
       prometheus.io/port: "8082"
