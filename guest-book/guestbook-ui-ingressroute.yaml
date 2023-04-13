@@ -6,7 +6,7 @@ spec:
   entryPoints:
     - web
   routes:
-    - match: PathPrefix(`/guestbook`)
+    - match: Host(`guestbook.local`)
       kind: Rule
       services:
         - name: guestbook-ui
