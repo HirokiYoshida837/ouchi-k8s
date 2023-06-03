@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: repost-kun
+  namespace: repost-kun
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/HirokiYoshida837/ouchi-k8s.git'
+    targetRevision: HEAD
+    path: repostkun/resources
+
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: repostkun
+
+  # # ConfigMapを参照する
+  # spec:
+  #   envFrom:
+  #     - configMapRef:
+  #         name: your-app-config
