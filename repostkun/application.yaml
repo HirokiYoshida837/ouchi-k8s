@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: repost-kun
-  namespace: repost-kun
+  namespace: repostkun
 spec:
   project: default
   source:
