@@ -1,0 +1,1 @@
+自作discord repost bot用。

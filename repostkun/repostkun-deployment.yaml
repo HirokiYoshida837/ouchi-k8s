@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: repostkun-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: repost-kun
+  template:
+    metadata:
+      labels:
+        app: repost-kun
+    spec:
+      containers:
+        - name: repost-kun
+          image: ghcr.io/hirokiyoshida837/repost_kun:latest
