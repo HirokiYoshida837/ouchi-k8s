@@ -15,3 +15,6 @@ spec:
       containers:
         - name: repost-kun
           image: ghcr.io/hirokiyoshida837/repost_kun:latest
+          envFrom:
+            - configMapRef:
+                name: discord-config
