@@ -1,5 +1,9 @@
 # ouchi-k8s
 
+> [!warn]
+> こちらのrepositoryは移行済のためarchiveされます。
+> https://github.com/HirokiYoshida837/ouchi-k8s-ops
+
 `ouchi-k8s` is iikanji in-house k8s cluster project.
 
 ## about
